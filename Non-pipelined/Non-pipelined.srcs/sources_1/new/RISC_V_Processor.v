@@ -14,13 +14,15 @@ module RISC_V_Processor(input reset, input clk);
     wire [3:0] Operation;
     wire [63:0] WriteData, ReadData1, ReadData2;
     wire [63:0] b;
-    wire Zero;
+    wire Zero, Less;
     wire [63:0] Result;
     wire [63:0] Read_Data;
     wire [63:0] out1, out2;
     
     Program_Counter pc (reset, clk, PC_In, PC_Out);
     Instruction_Memory inst_mem (PC_Out, instruction);
+    wire branchOp;
+    assign branchOp = instruction[14];
     Instruction_Parser inst_par (instruction, opcode, rd, funct3, rs1, rs2, funct7);
     Immediate_Generator imm_gen (instruction, imm_data);
     Control_Unit cu (opcode, branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
@@ -30,13 +32,13 @@ module RISC_V_Processor(input reset, input clk);
     ALU_Control alu_c (ALUOp, var1, Operation);
     RegisterFile reg_file (WriteData, rs1, rs2, rd, RegWrite, clk, reset, ReadData1, ReadData2);
     Multiplexer_21 m1 (ReadData2, imm_data, ALUSrc, b);
-    ALU_64_bit alu (ReadData1, b, Operation, Zero, Result);
+    ALU_64_bit alu (ReadData1, b, Operation, Zero, Less, Result);
     Data_Memory data_mem (clk, Result, ReadData2, MemWrite, MemRead, Read_Data);
     Multiplexer_21 m2 (Result, Read_Data, MemToReg, WriteData);
     reg [63:0] var2 = 64'd4;
     Adder a1 (PC_Out, var2, out1);
     Adder a2 (PC_Out, imm_data, out2);
-    wire var3 = branch & Zero;
+    wire var3 = (branch & Zero & ~branchOp) || (branch & Less & branchOp);
     Multiplexer_21 m3 (out1, out2, var3, PC_In);
     
 

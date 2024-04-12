@@ -10,19 +10,19 @@ module Immediate_Generator(
         if ( instruction[6] == 0 )
         begin
             if ( instruction[5] == 0 )
-            begin
+            begin // load
                 imm_data[11:0] = instruction[31:20];
                 imm_data[12] = instruction[31];
             end
             else
-            begin
+            begin // store
                 imm_data[11:5] = instruction[31:25];
                 imm_data[4:0] = instruction[11:7];
                 imm_data[12] = instruction[31];
             end
         end
         else
-        begin
+        begin // branch
             imm_data[12] = instruction[31];
             imm_data[10:5] = instruction[30:25];
             imm_data[4:1] = instruction[11:8];
