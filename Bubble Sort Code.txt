@@ -1,0 +1,73 @@
+li x10 0x100 # base address
+li x11 7 # length of array
+li x1 3
+li x2 1
+li x3 11
+li x4 10
+li x5 5
+li x6 0
+li x7 8
+sb x1 0(x10)
+sb x2 1(x10)
+sb x3 2(x10)
+sb x4 3(x10)
+sb x5 4(x10)
+sb x6 5(x10)
+sb x7 6(x10) #😊
+ 
+######################################
+ 
+bubble_bort:
+
+    li x19 0 # initialize i in temp reg x19
+    addi x21 x11 -1 # store len(array) - 1 in temp reg x21
+    
+    outer: 
+    	li x20  0 # initialize j in temp reg x20
+
+        inner:
+			swap: 
+				addi sp sp -12 # allocating space for 3 integers 
+    			sw x18 8(sp) # temp v[j+1] 
+    			sw x9 4(sp) # temp v[j] 
+    			sw x8 0(sp) # address v[j] 
+ 
+    			# calculate address of v[j] 
+   				add x8 x10 x20 # head + j (index of v[j]) 
+  
+    			lb x9 0(x8) # temp v[j]  
+    			lb x18 1(x8) # temp v[j+1]    
+        
+        		blt x9 x18 swap_end
+ 
+   				sb x9 1(x8)	# storing v[j] at j+1 
+    			sb x18 0(x8) # storing v[j+1] at j     				
+        
+    		swap_end:
+                # deallocating 
+    			lw x8 0(sp)  
+  	  			lw x9 4(sp) 
+  				lw x18 8(sp) 
+   				addi sp sp 12 
+                    
+            addi x20 x20 1 # increment j
+            blt x20 x21 inner # continue while j < length - 1
+            
+		addi x19 x19 1 # increment i
+        blt x19 x11 outer # continue while i < length 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

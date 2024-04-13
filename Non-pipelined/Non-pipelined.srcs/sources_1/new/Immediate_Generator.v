@@ -23,16 +23,19 @@ module Immediate_Generator(
         end
         else
         begin // branch
-            imm_data[12] = instruction[31];
+//            imm_data[12] = instruction[31];
+            imm_data[12] = 0;
             imm_data[10:5] = instruction[30:25];
             imm_data[4:1] = instruction[11:8];
             imm_data[11] = instruction[7];
             imm_data[0] = 0;
         end
         
-        if ( imm_data[12]== 0 )
-            imm_data[63:13] = 51'b0;
-        else 
-            imm_data[31:13] = 51'b1;
+//        if ( instruction[31]== 0 )
+//            imm_data[63:13] = 51'b0;
+//        else 
+//            imm_data[31:13] = 51'b111111111111111111111111111111111111111111111111111;
+        imm_data[62:13] = 0;
+        imm_data[63] = instruction[31] == 1 ? 1 : 0;
     end
 endmodule
