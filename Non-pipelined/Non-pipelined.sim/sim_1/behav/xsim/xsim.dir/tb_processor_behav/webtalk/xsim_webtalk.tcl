@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Apr 14 01:01:18 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Apr 16 03:48:05 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2902540" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "fe968eeb-1042-4d94-aa39-ef78f403d081" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "9a15cd6d9a0849e38e1381536a0efad7" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "60" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "69" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i3-10100F CPU @ 3.60GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "17.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "280 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "140 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "5" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.03_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6772_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3195612004 -regid "" -xml C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6768_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1744095845 -regid "" -xml C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
