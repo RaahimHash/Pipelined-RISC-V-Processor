@@ -38,10 +38,10 @@ module Control_Unit(
        
        else 
        begin
-           if (Opcode[5] == 0) // I-Type (ld)
+           if (Opcode[5] == 0) // I-Type 
            begin
            
-               if (Opcode[4] == 0)
+               if (Opcode[4] == 0) // (ld)
                begin
                ALUSrc = 1;
                MemToReg = 1;
@@ -52,7 +52,7 @@ module Control_Unit(
                ALUOp = 0;
                end
                
-               else // I-Type (addi)
+               else // (addi and slli)
                begin
                ALUSrc = 1;
                MemToReg = 0;

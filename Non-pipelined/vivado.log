@@ -1,0 +1,993 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Apr 16 14:47:35 2024
+# Process ID: 2744
+# Current directory: C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1480 C:\Users\Raahim\Documents\GitHub\Pipelined-RISC-V-Processor\Non-pipelined\Non-pipelined.xpr
+# Log file: C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/vivado.log
+# Journal file: C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gamazone/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:20 . Memory (MB): peak = 1015.414 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '15' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1015.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.414 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 1015.414 ; gain = 0.000
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_processor_behav -key {Behavioral:sim_1:Functional:tb_processor} -tclbatch {tb_processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.414 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_xsim_kernel: Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:53 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_xsim_kernel: Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_xsim_kernel: Time (s): cpu = 00:00:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:52 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.414 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1015.414 ; gain = 0.000
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim/xsim.dir/tb_processor_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 18 11:40:36 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.414 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_processor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Multiplexer_21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.sim/sim_1/behav/xsim'
+"xelab -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 9a15cd6d9a0849e38e1381536a0efad7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_processor_behav xil_defaultlib.tb_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Instruction_Parser
+Compiling module xil_defaultlib.Immediate_Generator
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Multiplexer_21
+Compiling module xil_defaultlib.ALU_64_bit
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.RISC_V_Processor
+Compiling module xil_defaultlib.tb_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+$stop called at time : 100 ns : File "C:/Users/Raahim/Documents/GitHub/Pipelined-RISC-V-Processor/Non-pipelined/Non-pipelined.srcs/sim_1/new/tb_processor.v" Line 18
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.414 ; gain = 0.000
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns

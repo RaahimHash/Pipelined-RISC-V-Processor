@@ -55,19 +55,3 @@ bubble_bort:
             
 		addi x19 x19 1 # increment i
         blt x19 x11 outer # continue while i < length 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
