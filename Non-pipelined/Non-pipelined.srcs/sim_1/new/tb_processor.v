@@ -14,7 +14,7 @@ module tb_processor();
         reset = 1;
         #20
         reset = 0;
-        #70   
+        #570   
         $stop;
     end
     

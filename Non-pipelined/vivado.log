@@ -991,3 +991,7 @@ run 20 ns
 run 20 ns
 run 20 ns
 run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 12:47:40 2024...

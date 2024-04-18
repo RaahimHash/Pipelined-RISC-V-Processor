@@ -9,6 +9,7 @@ module Data_Memory (
     
     reg [7:0] mem [0:63];
     initial begin // stored as follows: [2, 3, 0, 512, 5, 4, 13, 3]
+// expected output: [0, 2, 3, 3, 4, 5, 13, 512]
         mem[0] = 2;
         mem[1] = 0;
         mem[2] = 0;
@@ -73,6 +74,42 @@ module Data_Memory (
         mem[61] = 0;
         mem[62] = 0;
         mem[63] = 0;
+        mem[64] = 0;
+        mem[65] = 0;
+        mem[66] = 0;
+        mem[67] = 0;
+        mem[68] = 0;
+        mem[69] = 0;
+        mem[70] = 0;
+        mem[71] = 0;
+        mem[72] = 0;
+        mem[73] = 0;
+        mem[74] = 0;
+        mem[75] = 0;
+        mem[76] = 0;
+        mem[77] = 0;
+        mem[78] = 0;
+        mem[79] = 0;
+        mem[80] = 0;
+        mem[81] = 0;
+        mem[82] = 0;
+        mem[83] = 0;
+        mem[84] = 0;
+        mem[85] = 0;
+        mem[86] = 0;
+        mem[87] = 0;
+        mem[88] = 0;
+        mem[89] = 0;
+        mem[90] = 0;
+        mem[91] = 0;
+        mem[92] = 0;
+        mem[93] = 0;
+        mem[94] = 0;
+        mem[95] = 0;
+        mem[96] = 0;
+        mem[97] = 0;
+        mem[98] = 0;
+        mem[99] = 0;
     end
 
 

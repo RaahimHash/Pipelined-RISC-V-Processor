@@ -41,3 +41,4 @@ run 20 ns
 run 20 ns
 run 20 ns
 run 20 ns
+close_sim
