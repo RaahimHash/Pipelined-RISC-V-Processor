@@ -63,7 +63,7 @@ module RegisterFile(
     begin
         Registers[0] = 0;
         Registers[1] = 0;
-        Registers[2] = 0;
+        Registers[2] = 92;
         Registers[3] = 0;
         Registers[4] = 0;
         Registers[5] = 0;

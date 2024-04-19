@@ -7,13 +7,14 @@ li x4 10
 li x5 5
 li x6 0
 li x7 8
-sb x1 0(x10)
-sb x2 1(x10)
-sb x3 2(x10)
-sb x4 3(x10)
-sb x5 4(x10)
-sb x6 5(x10)
-sb x7 6(x10) #😊
+
+sw x1 0(x10) 
+sw x2 4(x10) 
+sw x3 8(x10) 
+sw x4 12(x10)
+sw x5 16(x10) 
+sw x6 20(x10) 
+sw x7 24(x10) 
  
 ######################################
  
@@ -33,15 +34,16 @@ bubble_bort:
     			sw x8 0(sp) # address v[j] 
  
     			# calculate address of v[j] 
-   				add x8 x10 x20 # head + j (index of v[j]) 
+   				slli x8 x20 2 # head + j (index of v[j]) multiplied by 4
+				add x8 x8 x10 # base address + offset
   
-    			lb x9 0(x8) # temp v[j]  
-    			lb x18 1(x8) # temp v[j+1]    
+    			lw x9 0(x8) # temp v[j]  
+    			lw x18 4(x8) # temp v[j+1]    
         
         		blt x9 x18 swap_end
  
-   				sb x9 1(x8)	# storing v[j] at j+1 
-    			sb x18 0(x8) # storing v[j+1] at j     				
+   				sw x9 4(x8)	# storing v[j] at j+1 
+    			sw x18 0(x8) # storing v[j+1] at j     				
         
     		swap_end:
                 # deallocating 

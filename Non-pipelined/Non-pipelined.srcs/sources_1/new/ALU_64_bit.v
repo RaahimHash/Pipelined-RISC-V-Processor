@@ -8,7 +8,7 @@ output wire less,
 output reg [63:0] result);
 
 assign zero = (result == 0);
-assign less = (a < b);
+assign less = (a < b) || (a[63] == 1 & b[63] == 0);
 
 always @(*)
 begin

@@ -7,9 +7,9 @@ module Data_Memory (
     output reg [63:0] Read_Data
     );
     
-    reg [7:0] mem [0:63];
-    initial begin // stored as follows: [2, 3, 0, 512, 5, 4, 13, 3]
-// expected output: [0, 2, 3, 3, 4, 5, 13, 512]
+    reg [7:0] mem [0:99];
+    initial begin // stored as follows: [2, 3, 0, 256, 5, 4, 13, 3]
+// expected output: [0, 2, 3, 3, 4, 5, 13, 256]
         mem[0] = 2;
         mem[1] = 0;
         mem[2] = 0;

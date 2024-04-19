@@ -33,6 +33,6 @@ module Immediate_Generator(
         if ( instruction[31]== 0 )
             imm_data[63:13] = 51'b0;
         else 
-            imm_data[31:13] = 51'b111111111111111111111111111111111111111111111111111;
+            imm_data[63:13] = 51'b111111111111111111111111111111111111111111111111111;
     end
 endmodule
