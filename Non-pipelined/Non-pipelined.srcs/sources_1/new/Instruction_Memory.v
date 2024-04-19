@@ -15,7 +15,7 @@ module Instruction_Memory(
         memory[4] = 8'b10010011;
         memory[5] = 8'b00000101;
         memory[6] = 8'b10000000;
-        memory[7] = 8'b00000000; // addi x11 x0 7
+        memory[7] = 8'b00000000; // addi x11 x0 8
         memory[8] = 8'b10010011;
         memory[9] = 8'b00001001;
         memory[10] = 8'b00000000;
