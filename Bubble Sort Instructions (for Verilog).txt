@@ -1,27 +1,26 @@
 // stored as follows: [2, 3, 0, 256, 5, 4, 13, 3]
-addi x2 0 96 // stack pointer
 addi x10 x0 0 // memory head address
-addi x11 0 7 // length
+addi x11 0 8 // length
 addi x19 x0 0 // i
 addi x21 x11 -1 // length - 1
 addi x20 x0 0 // j 
 addi x2 x2 -24 // make space for 3 reg on stack
-sd x18 16(x2)
+sd x18 16(x2) // storing temp registers
 sd x9 8(x2)
 sd x8 0(x2)
-slli x8 x20 3
-add x8 x8 x10
-ld x9 0(x8)
-ld x18 8(x8)
-blt x9 x18 12
-sd x9 8(x8)
+slli x8 x20 3 // multiply my 8 to offset for double
+add x8 x8 x10 // add base array address to reach arr[j]
+ld x9 0(x8) // load arr[j]
+ld x18 8(x8) // load arr[j+1]
+blt x9 x18 12 // if already sorted then skip next two instructions
+sd x9 8(x8) // swap 
 sd x18 0(x8)
-ld x8 0(x2)
+ld x8 0(x2) // retrieve temp registers
 ld x9 8(x2)
 ld x18 16(x2)
-addi x2 x2 24
-addi x20 x20 1
-blt x20 x21 -64
-addi x19 x19 1
-blt x19 x11 -76
+addi x2 x2 24 // deallocate stack
+addi x20 x20 1 // j++
+blt x20 x21 -64 // if j < length - 1 continue inner loop
+addi x19 x19 1 // i++
+blt x19 x11 -76 // if i < length continue outer loop
 
