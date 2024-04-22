@@ -17,7 +17,7 @@ module RegisterFile(
     begin 
         Registers[0] = 1;
         Registers[1] = 2;
-        Registers[2] = 3;
+        Registers[2] = 92;
         Registers[3] = 4;
         Registers[4] = 5;
         Registers[5] = 6;
