@@ -1,5 +1,5 @@
 # Pipelined-RISC-V-Processor
-This repository contains our final project for the course "Computer Architecture" offered in Spring 2024.
+This repository contains our final project for the course "Computer Architecture" offered in Spring 2024. We were tasked with creating a non-pipelined processor that could run a sorting algorithm (we chose bubble sort), then pipeline said processor and implement proper forwarding and hazard detection such that the pipelined processor could run a sorting algorithm.
 
 - "Task 1" contains a non-pipelined processor where bubble sort functions perfectly.
 
