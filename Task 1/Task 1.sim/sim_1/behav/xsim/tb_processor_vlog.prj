@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Task 1.srcs/sources_1/new/ALU_64_bit.v" \
+"../../../../Task 1.srcs/sources_1/new/ALU_Control.v" \
+"../../../../Task 1.srcs/sources_1/new/Adder.v" \
+"../../../../Task 1.srcs/sources_1/new/Control_Unit.v" \
+"../../../../Task 1.srcs/sources_1/new/Data_Memory.v" \
+"../../../../Task 1.srcs/sources_1/new/Immediate_Generator.v" \
+"../../../../Task 1.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Task 1.srcs/sources_1/new/Instruction_Parser.v" \
+"../../../../Task 1.srcs/sources_1/new/Multiplexer_21.v" \
+"../../../../Task 1.srcs/sources_1/new/Program_Counter.v" \
+"../../../../Task 1.srcs/sources_1/new/RISC_V_Processor.v" \
+"../../../../Task 1.srcs/sources_1/new/RegisterFile.v" \
+"../../../../Task 1.srcs/sim_1/new/tb_processor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,24 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Downloads/CA Project/Task 2/Task 2.sim/sim_1/behav/xsim/glbl.v,1716043007,verilog,,,,glbl,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sim_1/new/tb_processor.v,1718643236,verilog,,,,tb_processor,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/ALU_64_bit.v,1716043007,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/ALU_Control.v,,ALU_64_bit,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/ALU_Control.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Adder.v,,ALU_Control,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Adder.v,1716043007,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Control_Unit.v,,Adder,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Control_Unit.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Data_Memory.v,,Control_Unit,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Data_Memory.v,1716043007,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/EX_MEM_Reg.v,,Data_Memory,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/EX_MEM_Reg.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/ID_EX_Reg.v,,EX_MEM_Reg,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/ID_EX_Reg.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/IF_ID_Reg.v,,ID_EX_Reg,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/IF_ID_Reg.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Immediate_Generator.v,,IF_ID_Reg,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Immediate_Generator.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Instruction_Memory.v,,Immediate_Generator,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Instruction_Memory.v,1718643444,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Instruction_Parser.v,,Instruction_Memory,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Instruction_Parser.v,1716043007,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/MEM_WB_Reg.v,,Instruction_Parser,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/MEM_WB_Reg.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Multiplexer_21.v,,MEM_WB_Reg,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Multiplexer_21.v,1716043007,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Multiplexer_41.v,,Multiplexer_21,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Multiplexer_41.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Program_Counter.v,,Multiplexer_41,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/Program_Counter.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/RISC_V_Processor.v,,Program_Counter,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/RISC_V_Processor.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/RegisterFile.v,,RISC_V_Processor,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/RegisterFile.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/forwarding_unit.v,,RegisterFile,,,,,,,,
+D:/Downloads/CA Project/Task 2/Task 2.srcs/sources_1/new/forwarding_unit.v,1718643236,verilog,,D:/Downloads/CA Project/Task 2/Task 2.srcs/sim_1/new/tb_processor.v,,forwarding_unit,,,,,,,,

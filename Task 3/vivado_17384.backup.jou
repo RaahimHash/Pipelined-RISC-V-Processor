@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jun 17 22:04:48 2024
+# Process ID: 17384
+# Current directory: D:/Downloads/CA Project/Task 3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent440 D:\Downloads\CA Project\Task 3\Task 3.xpr
+# Log file: D:/Downloads/CA Project/Task 3/vivado.log
+# Journal file: D:/Downloads/CA Project/Task 3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Downloads/CA Project/Task 3/Task 3.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/Downloads/CA Project/Task 3/Task 3.srcs/sim_1/imports/Non-pipelined/tb_processor_behav.wcfg}
+source tb_processor.tcl
+run 10000 ns
+run 10000 ns
+close_sim

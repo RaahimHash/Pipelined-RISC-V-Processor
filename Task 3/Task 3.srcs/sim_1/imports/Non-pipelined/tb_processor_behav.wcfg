@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_processor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_processor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="379203fs"></ZoomEndTime>
+      <Cursor1Time time="300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="58" />
+   <wvobject fp_name="/tb_processor/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/var3" type="logic">
+      <obj_property name="ElementShortName">var3</obj_property>
+      <obj_property name="ObjectShortName">var3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[0]" type="array">
+      <obj_property name="ElementShortName">[0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[8]" type="array">
+      <obj_property name="ElementShortName">[8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[16]" type="array">
+      <obj_property name="ElementShortName">[16][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[24]" type="array">
+      <obj_property name="ElementShortName">[24][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[32]" type="array">
+      <obj_property name="ElementShortName">[32][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[40]" type="array">
+      <obj_property name="ElementShortName">[40][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[48]" type="array">
+      <obj_property name="ElementShortName">[48][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[48][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/data_mem/mem[56]" type="array">
+      <obj_property name="ElementShortName">[56][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[56][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/PC_In" type="array">
+      <obj_property name="ElementShortName">PC_In[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_In[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/PC_Out" type="array">
+      <obj_property name="ElementShortName">PC_Out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/ReadData1" type="array">
+      <obj_property name="ElementShortName">ReadData1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/ReadData2" type="array">
+      <obj_property name="ElementShortName">ReadData2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/imm_data" type="array">
+      <obj_property name="ElementShortName">imm_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exRs1" type="array">
+      <obj_property name="ElementShortName">exRs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">exRs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exReadData1" type="array">
+      <obj_property name="ElementShortName">exReadData1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">exReadData1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exRs2" type="array">
+      <obj_property name="ElementShortName">exRs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">exRs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exReadData2" type="array">
+      <obj_property name="ElementShortName">exReadData2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">exReadData2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exRd" type="array">
+      <obj_property name="ElementShortName">exRd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">exRd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exImm_data" type="array">
+      <obj_property name="ElementShortName">exImm_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">exImm_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/Result" type="array">
+      <obj_property name="ElementShortName">Result[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memRd" type="array">
+      <obj_property name="ElementShortName">memRd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">memRd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memResult" type="array">
+      <obj_property name="ElementShortName">memResult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">memResult[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbRd" type="array">
+      <obj_property name="ElementShortName">wbRd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wbRd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbResult" type="array">
+      <obj_property name="ElementShortName">wbResult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wbResult[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbReadData" type="array">
+      <obj_property name="ElementShortName">wbReadData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wbReadData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbWriteData" type="array">
+      <obj_property name="ElementShortName">wbWriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wbWriteData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/forwardA" type="array">
+      <obj_property name="ElementShortName">forwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/a" type="array">
+      <obj_property name="ElementShortName">a[63:0]</obj_property>
+      <obj_property name="ObjectShortName">a[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/b" type="array">
+      <obj_property name="ElementShortName">b[63:0]</obj_property>
+      <obj_property name="ObjectShortName">b[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/forwardB" type="array">
+      <obj_property name="ElementShortName">forwardB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/fB_out" type="array">
+      <obj_property name="ElementShortName">fB_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fB_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/MemToReg" type="logic">
+      <obj_property name="ElementShortName">MemToReg</obj_property>
+      <obj_property name="ObjectShortName">MemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/ALUOp" type="array">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exMemRead" type="logic">
+      <obj_property name="ElementShortName">exMemRead</obj_property>
+      <obj_property name="ObjectShortName">exMemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exMemToReg" type="logic">
+      <obj_property name="ElementShortName">exMemToReg</obj_property>
+      <obj_property name="ObjectShortName">exMemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exMemWrite" type="logic">
+      <obj_property name="ElementShortName">exMemWrite</obj_property>
+      <obj_property name="ObjectShortName">exMemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exALUSrc" type="logic">
+      <obj_property name="ElementShortName">exALUSrc</obj_property>
+      <obj_property name="ObjectShortName">exALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/Operation" type="array">
+      <obj_property name="ElementShortName">Operation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Operation[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exInstruction30" type="logic">
+      <obj_property name="ElementShortName">exInstruction30</obj_property>
+      <obj_property name="ObjectShortName">exInstruction30</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exInstruction14_12" type="array">
+      <obj_property name="ElementShortName">exInstruction14_12[2:0]</obj_property>
+      <obj_property name="ObjectShortName">exInstruction14_12[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/exRegWrite" type="logic">
+      <obj_property name="ElementShortName">exRegWrite</obj_property>
+      <obj_property name="ObjectShortName">exRegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memMemRead" type="logic">
+      <obj_property name="ElementShortName">memMemRead</obj_property>
+      <obj_property name="ObjectShortName">memMemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memMemToReg" type="logic">
+      <obj_property name="ElementShortName">memMemToReg</obj_property>
+      <obj_property name="ObjectShortName">memMemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memRegWrite" type="logic">
+      <obj_property name="ElementShortName">memRegWrite</obj_property>
+      <obj_property name="ObjectShortName">memRegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/memMemWrite" type="logic">
+      <obj_property name="ElementShortName">memMemWrite</obj_property>
+      <obj_property name="ObjectShortName">memMemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbMemToReg" type="logic">
+      <obj_property name="ElementShortName">wbMemToReg</obj_property>
+      <obj_property name="ObjectShortName">wbMemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/processor/wbRegWrite" type="logic">
+      <obj_property name="ElementShortName">wbRegWrite</obj_property>
+      <obj_property name="ObjectShortName">wbRegWrite</obj_property>
+   </wvobject>
+</wave_config>

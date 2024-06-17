@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Task 2.srcs/sources_1/new/ALU_64_bit.v" \
+"../../../../Task 2.srcs/sources_1/new/ALU_Control.v" \
+"../../../../Task 2.srcs/sources_1/new/Adder.v" \
+"../../../../Task 2.srcs/sources_1/new/Control_Unit.v" \
+"../../../../Task 2.srcs/sources_1/new/Data_Memory.v" \
+"../../../../Task 2.srcs/sources_1/new/EX_MEM_Reg.v" \
+"../../../../Task 2.srcs/sources_1/new/ID_EX_Reg.v" \
+"../../../../Task 2.srcs/sources_1/new/IF_ID_Reg.v" \
+"../../../../Task 2.srcs/sources_1/new/Immediate_Generator.v" \
+"../../../../Task 2.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Task 2.srcs/sources_1/new/Instruction_Parser.v" \
+"../../../../Task 2.srcs/sources_1/new/MEM_WB_Reg.v" \
+"../../../../Task 2.srcs/sources_1/new/Multiplexer_21.v" \
+"../../../../Task 2.srcs/sources_1/new/Multiplexer_41.v" \
+"../../../../Task 2.srcs/sources_1/new/Program_Counter.v" \
+"../../../../Task 2.srcs/sources_1/new/RISC_V_Processor.v" \
+"../../../../Task 2.srcs/sources_1/new/RegisterFile.v" \
+"../../../../Task 2.srcs/sources_1/new/forwarding_unit.v" \
+"../../../../Task 2.srcs/sim_1/new/tb_processor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
